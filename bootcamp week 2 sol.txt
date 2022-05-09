@@ -124,3 +124,16 @@ Sample Input - [(45,77), (88,87), (67,98), (33,31)]
 In (45,77), which is the first element in the list, 45 and 77 are the scores of a student in aptitude and physics respectively.
 Sample Output - [ (67,98), (88,87), (45,77),(33,31)]
 
+import ast
+input_list = ast.literal_eval(input())
+#print(input_list)
+
+l = len(input_list)
+for i in range(0,l):
+    for j in range(0,i):
+        if input_list[i][1] > input_list[j][1]:
+            input_list[i], input_list[j] = input_list[j], input_list[i]
+            
+        
+print(input_list)
+
