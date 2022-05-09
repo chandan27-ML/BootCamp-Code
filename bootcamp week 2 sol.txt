@@ -78,3 +78,49 @@ for i in range(K-1, len(input_list)):
     output_list.append(input_list[i])
 
 print(output_list)
+
+##############################################################################################################
+
+
+Substring with maximum uppercase characters
+Description
+Given a string, write a Python program to find the largest substring of uppercase characters and print the length of that substring. Check the sample inputs and outputs for a better understanding.
+---------------------------------------------------------------------------------------------------
+Input - String
+Output - String
+---------------------------------------------------------------------------------------------------
+Sample Input - I lovE PRogrAMMING
+Sample Output - 6
+
+#Take input here
+test_str = input()
+#test_str = 'I love PrograMMING and'
+#print(test_str)
+#Write the code here
+count =0
+lst = []
+for i in range(0,len(test_str)):
+    #print(i, test_str[i])
+    if (ord(test_str[i]) >= 65 and ord(test_str[i])<= 90):
+        count= count +1
+    else:
+        count = 0 
+    lst.append(count)
+
+print(max(lst))
+
+
+#############################################################################################
+
+Sorting list of tuples
+Description
+A class of students attempt an exam in two parts: ‘Aptitude’ and ‘Physics'. The marks of all the students are stored as a list of tuples, and each student’s marks (in Aptitude and Physics) are stored in each tuple. Your task is to write a Python program to sort the list of tuples in decreasing order of the Physics scores of the students.
+Note - Marks of both the subjects are ranged between 1-100, and no two students have scored the same marks in Physics.
+---------------------------------------------------------------------------------------------------
+Input - List of tuples
+Output - List of tuples
+---------------------------------------------------------------------------------------------------
+Sample Input - [(45,77), (88,87), (67,98), (33,31)]
+In (45,77), which is the first element in the list, 45 and 77 are the scores of a student in aptitude and physics respectively.
+Sample Output - [ (67,98), (88,87), (45,77),(33,31)]
+
