@@ -1,0 +1,26 @@
+Given a list of strings, write a program to find the number of strings whose length is greater than or equal to K, where K is a positive integer.
+Input - List of strings and an integer
+
+Output - Integer
+Sample Input :
+
+[Mumbai, Hyderabad, Calicut, Chennai]
+
+9 Sample Output: 1
+
+
+#input_str = sys.stdin.read()
+input_list = ast.literal_eval(input())
+inp_num = int(input())
+#print(inp_num)
+
+sum1 = 0
+for i in input_list:
+    #print(i)
+    #print (len(i))
+    if len(i) >= inp_num:
+        sum1 = sum1+1
+        #print(sum1)
+        
+print(sum1)
+#start writing your code here
