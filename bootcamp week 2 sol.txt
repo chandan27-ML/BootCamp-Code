@@ -164,3 +164,47 @@ if (count ==0):
     print ('Happy Number')
 else:
     print ('Sad Number')
+
+#####################################################################################################
+
+#Take input here
+#we will take input using ast sys
+import ast
+#reading the input dictionary
+input_dictionary = input()
+convert_dictionary = ast.literal_eval(input_dictionary)
+
+#reading the input list
+input_list = input()
+convert_list = ast.literal_eval(input_list)
+
+#Write code here
+for i in range(len(convert_list)):
+    if convert_list[i][0] in convert_dictionary.keys():
+        convert_dictionary[convert_list[i][0]] = convert_list[i][1]
+
+print(convert_dictionary)
+
+#######################################################################################################
+
+#Take input from here
+import ast
+grp_avg = ast.literal_eval(input())
+ind_score = ast.literal_eval(input())
+#Write the code here
+
+#print (len(grp_avg))
+#print(ind_score)
+#print(len(grp_avg))
+count=0
+for i in range(len(grp_avg)):
+    if (float(grp_avg[i]) > float(ind_score[i])):
+        count= count +1
+if (count>2):
+    print('Rejected')
+else:
+    print('Selected')
+    
+ ###############################################################################################################
+ 
+ 
